@@ -10,6 +10,8 @@ public class InMemoryStore
 
     public ConcurrentDictionary<Guid, Policy> Policies { get; } = new();
 
+    public ConcurrentDictionary<Guid, Claim> Claims { get; } = new();
+
     // To guarantee atomicity and avoid concurrency problems
     public object SyncRoot { get; } = new();
 }

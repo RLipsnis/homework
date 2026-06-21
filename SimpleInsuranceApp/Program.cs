@@ -22,6 +22,7 @@ builder.Services.AddExceptionHandler<DomainExceptionHandler>();
 builder.Services.AddSingleton<InMemoryStore>();
 builder.Services.AddScoped<CustomerService>();
 builder.Services.AddScoped<PolicyService>();
+builder.Services.AddScoped<ClaimService>();
 
 var app = builder.Build();
 

@@ -20,3 +20,9 @@ public enum ClaimStatus
     Rejected,
 }
 
+public enum ClaimDecision
+{
+    Approve,
+    Reject,
+}
+
