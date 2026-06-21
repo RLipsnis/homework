@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using InsuranceCore.Api.Infrastructure;
 using SimpleInsuranceApp.Infrastructure;
 using SimpleInsuranceApp.Services;
 using SimpleInsuranceApp.Storage;
@@ -22,6 +21,7 @@ builder.Services.AddExceptionHandler<DomainExceptionHandler>();
 // In-memory storage (singleton) + per-request domain services.
 builder.Services.AddSingleton<InMemoryStore>();
 builder.Services.AddScoped<CustomerService>();
+builder.Services.AddScoped<PolicyService>();
 
 var app = builder.Build();
 
