@@ -1,4 +1,4 @@
-namespace InsuranceCore.Api.Infrastructure;
+namespace SimpleInsuranceApp.Infrastructure;
 
 /// <summary>
 /// A tiny Swagger UI page that renders the OpenAPI document produced by the built-in
