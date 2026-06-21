@@ -38,3 +38,6 @@ app.MapControllers();
 
 app.Run();
 
+// Exposed so the test project's WebApplicationFactory<Program> can boot the app.
+public partial class Program { }
+
